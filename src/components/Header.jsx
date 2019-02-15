@@ -12,6 +12,7 @@ function Header() {
           }
           h1 {
             text-align: center;
+            font-size: 3em;
           }
           img {
             max-width: 100%;
