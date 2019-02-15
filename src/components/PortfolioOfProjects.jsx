@@ -8,6 +8,51 @@ const projectList = [
     shortDescription: "This project rocks"
   },
   {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
+    name: "project 1",
+    languages: ["javascript", "html"],
+    shortDescription: "This project rocks"
+  },
+  {
     name: "project 2",
     languages: ["javascript", "html", "angular"],
     shortDescription: "This project was sick"
