@@ -10,7 +10,7 @@ This is a professional portfolio site built with react
 
 ### Specs
 
-![structure](https://github.com/stuart-gill/react-historical-figures/src/assets/images/structure.png)
+![project structure](https://github.com/stuart-gill/react-historical-figures/tree/master/src/assets/images/structure.png)
 
 ### Setup Instructions
 
