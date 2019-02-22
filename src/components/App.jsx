@@ -10,14 +10,6 @@ import Contact from "./Contact";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      detailsShown: false
-    };
-    this.handleToggleDetails = this.handleToggleDetails.bind(this);
-  }
-
-  handleToggleDetails() {
-    this.setState(oldState => ({ detailsShown: !oldState.detailsShown }));
   }
 
   render() {
@@ -38,9 +30,7 @@ class App extends React.Component {
           <Route
             exact
             path="/portfolio"
-            render={() => (
-              <PortfolioOfProjects onToggleDetails={this.handleToggleDetails} />
-            )}
+            render={() => <PortfolioOfProjects />}
           />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />

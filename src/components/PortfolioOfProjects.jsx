@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./Project";
+import PropTypes from "prop-types";
 
 const projectList = [
   {
@@ -32,21 +33,36 @@ const projectList = [
   }
 ];
 
-function PortfolioOfProjects() {
-  return (
-    <div>
-      {projectList.map((project, index) => (
-        <Project
-          name={project.name}
-          languages={project.languages}
-          shortDescription={project.shortDescription}
-          authors={project.authors}
-          link={project.link}
-          key={index}
-        />
-      ))}
-    </div>
-  );
+class PortfolioOfProjects extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedProject: null
+    };
+    this.handleSelectProject = this.handleSelectProject.bind(this);
+  }
+
+  handleSelectProject(projectId) {
+    this.setState({ selectedProject: projectId });
+  }
+
+  render() {
+    return (
+      <div>
+        {projectList.map((project, index) => (
+          <Project
+            onSelectProject={this.handleSelectProject}
+            name={project.name}
+            languages={project.languages}
+            shortDescription={project.shortDescription}
+            authors={project.authors}
+            link={project.link}
+            key={index}
+          />
+        ))}
+      </div>
+    );
+  }
 }
 
 export default PortfolioOfProjects;
