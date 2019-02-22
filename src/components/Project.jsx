@@ -21,7 +21,6 @@ class Project extends React.Component {
             }
             .details {
               grid-area: details;
-
               margin-left: 50px;
             }
           `}

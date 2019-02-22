@@ -26,30 +26,29 @@ function Header() {
             top: 0;
             height: 40px;
             width: 100%;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
           }
 
           .navItem {
             textalign: center;
-            flex: 1;
-            liststyletype: none;
             padding: 10px;
           }
         `}
       </style>
       <img src={lucienImage} />
       <h1>Portfolio</h1>
-      <ul className="navList">
-        <li className="navItem">
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-        <li className="navItem">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="navItem">
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
+      <div className="navList">
+        <Link to="/portfolio" className="navItem">
+          Portfolio
+        </Link>{" "}
+        <Link to="/about" className="navItem">
+          About
+        </Link>{" "}
+        <Link to="/contact" className="navItem">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import Project from "./Project";
-import PropTypes from "prop-types";
 
 const projectList = [
   {
