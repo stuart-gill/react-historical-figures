@@ -5,57 +5,26 @@ const projectList = [
   {
     name: "project 1",
     languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
+    shortDescription: "This project rocks",
+    authors: "Stuart Gill"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
+    shortDescription: "This project rocks",
+    authors: "Stuart Gill"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
+    shortDescription: "This project rocks",
+    authors: "Stuart Gill"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks"
-  },
-  {
-    name: "project 2",
-    languages: ["javascript", "html", "angular"],
-    shortDescription: "This project was sick"
+    shortDescription: "This project rocks",
+    authors: "Stuart Gill"
   }
 ];
 
@@ -67,6 +36,7 @@ function PortfolioOfProjects() {
           name={project.name}
           languages={project.languages}
           shortDescription={project.shortDescription}
+          authors={project.authors}
           key={index}
         />
       ))}

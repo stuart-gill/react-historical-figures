@@ -10,9 +10,7 @@ function Error404(props) {
       </h2>
       <h3>
         Would you like to return <Link to="/">Home</Link> |{" "}
-
-
-        <Link to="/historicalfigures">Historical Figures</Link> instead?
+        <Link to="/portfolio">Portfolio</Link> instead?
       </h3>
     </div>
   );
