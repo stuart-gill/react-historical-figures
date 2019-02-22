@@ -8,28 +8,32 @@ const projectList = [
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
     authors: "Stuart Gill",
-    link: "www.google.com"
+    link: "www.google.com",
+    projectId: "a"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
     authors: "Stuart Gill",
-    link: "www.google.com"
+    link: "www.google.com",
+    projectId: "b"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
     authors: "Stuart Gill",
-    link: "www.google.com"
+    link: "www.google.com",
+    projectId: "c"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
     authors: "Stuart Gill",
-    link: "www.google.com"
+    link: "www.google.com",
+    projectId: "d"
   }
 ];
 
@@ -44,6 +48,7 @@ class PortfolioOfProjects extends React.Component {
 
   handleSelectProject(projectId) {
     this.setState({ selectedProject: projectId });
+    console.log("selected" + { projectId });
   }
 
   render() {
@@ -58,6 +63,7 @@ class PortfolioOfProjects extends React.Component {
             authors={project.authors}
             link={project.link}
             key={index}
+            projectId={project.projectId}
           />
         ))}
       </div>
