@@ -4,27 +4,28 @@ import PropTypes from "prop-types";
 
 const projectList = [
   {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks",
+    name: "Angular Radavist Rebuild",
+    languages: ["javascript", "html", "angular"],
+    shortDescription: "A partial clone of theradavist.com cycling website",
     authors: "Stuart Gill",
-    link: "www.google.com",
+    link: "https://github.com/stuart-gill/angular-radavist-rebuild",
     projectId: "a"
   },
   {
-    name: "project 1",
+    name: "Doctor Search",
     languages: ["javascript", "html"],
-    shortDescription: "This project rocks",
+    shortDescription: "A doctor searching app using the Better Doctor API",
     authors: "Stuart Gill",
-    link: "www.google.com",
+    link: "https://github.com/stuart-gill/docsearch-webpack",
     projectId: "b"
   },
   {
-    name: "project 1",
-    languages: ["javascript", "html"],
-    shortDescription: "This project rocks",
+    name: "Library Database",
+    languages: ["C#", "ASP.Net core", "MySQL", "html"],
+    shortDescription: "A library database builder, search, and checkout app",
     authors: "Stuart Gill",
-    link: "www.google.com",
+    link:
+      "https://github.com/stuart-gill/Library.Solution/tree/master/Library/Views/Home",
     projectId: "c"
   },
   {
