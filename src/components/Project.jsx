@@ -5,16 +5,19 @@ function Project(props) {
   return (
     <div>
       <h2>{props.name}</h2>
+
       <p>{props.shortDescription}</p>
-      <p>Authors: {props.authors}</p>
-      <p>
-        Link: <a href={props.link}>{props.link}</a>{" "}
-      </p>
-      <ul>
-        {props.languages.map((languages, index) => (
-          <li key={index}>{languages}</li>
-        ))}
-      </ul>
+      <div className="details">
+        <p>Authors: {props.authors}</p>
+        <p>
+          Link: <a href={props.link}>{props.link}</a>{" "}
+        </p>
+        <ul>
+          {props.languages.map((languages, index) => (
+            <li key={index}>{languages}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
