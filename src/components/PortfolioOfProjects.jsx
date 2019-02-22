@@ -6,25 +6,29 @@ const projectList = [
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
-    authors: "Stuart Gill"
+    authors: "Stuart Gill",
+    link: "www.google.com"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
-    authors: "Stuart Gill"
+    authors: "Stuart Gill",
+    link: "www.google.com"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
-    authors: "Stuart Gill"
+    authors: "Stuart Gill",
+    link: "www.google.com"
   },
   {
     name: "project 1",
     languages: ["javascript", "html"],
     shortDescription: "This project rocks",
-    authors: "Stuart Gill"
+    authors: "Stuart Gill",
+    link: "www.google.com"
   }
 ];
 
@@ -37,6 +41,7 @@ function PortfolioOfProjects() {
           languages={project.languages}
           shortDescription={project.shortDescription}
           authors={project.authors}
+          link={project.link}
           key={index}
         />
       ))}
