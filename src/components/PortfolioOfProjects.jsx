@@ -48,7 +48,6 @@ class PortfolioOfProjects extends React.Component {
 
   handleSelectProject(projectId) {
     this.setState({ selectedProject: projectId });
-    console.log("selected" + { projectId });
   }
 
   render() {
@@ -58,12 +57,13 @@ class PortfolioOfProjects extends React.Component {
           <Project
             onSelectProject={this.handleSelectProject}
             name={project.name}
-            languages={project.languages}
             shortDescription={project.shortDescription}
-            authors={project.authors}
-            link={project.link}
             key={index}
+            link={project.link}
             projectId={project.projectId}
+            authors={project.authors}
+            languages={project.languages}
+            selectedProject={this.state.selectedProject}
           />
         ))}
       </div>

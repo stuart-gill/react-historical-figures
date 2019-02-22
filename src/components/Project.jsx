@@ -22,18 +22,20 @@ class Project extends React.Component {
           {this.props.name}
         </h2>
         <p>{this.props.shortDescription}</p>
-        <div className="details">
-          <p>Authors: {this.props.authors}</p>
-          {/* <p>{optionalSelectedDetails}</p> */}
-          <p>
-            Link: <a href={this.props.link}>{this.props.link}</a>{" "}
-          </p>
-          <ul>
-            {this.props.languages.map((languages, index) => (
-              <li key={index}>{languages}</li>
-            ))}
-          </ul>
-        </div>
+
+        {this.props.projectId === this.props.selectedProject && (
+          <div className="details">
+            <p>Authors: {this.props.authors}</p>
+            <p>
+              Link: <a href={this.props.link}>{this.props.link}</a>{" "}
+            </p>
+            <ul>
+              {this.props.languages.map((languages, index) => (
+                <li key={index}>{languages}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   }
