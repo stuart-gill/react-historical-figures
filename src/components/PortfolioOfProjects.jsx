@@ -22,9 +22,8 @@ const projectList = [
     name: "Library Database",
     languages: ["C#", "ASP.Net core", "MySQL", "html"],
     shortDescription: "A library database builder, search, and checkout app",
-    authors: "Stuart Gill",
-    link:
-      "https://github.com/stuart-gill/Library.Solution/tree/master/Library/Views/Home",
+    authors: "Stuart Gill and James Cho",
+    link: "https://github.com/stuart-gill/Library.Solution",
     projectId: "c"
   },
   {

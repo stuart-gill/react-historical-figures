@@ -6,6 +6,7 @@ import Home from "./Home";
 import PortfolioOfProjects from "./PortfolioOfProjects";
 import About from "./About";
 import Contact from "./Contact";
+import Admin from "./Admin";
 
 class App extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class App extends React.Component {
           />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path="/admin" component={Admin} />
           <Route component={Error404} />
         </Switch>
       </div>

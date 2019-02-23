@@ -11,6 +11,10 @@ class Project extends React.Component {
       <div className="wrapper">
         <style jsx>
           {`
+            h2:hover {
+              color: #a9a9a9;
+            }
+
             .wrapper {
               display: grid;
               grid-template-columns: 1fr 2fr;
