@@ -7,10 +7,24 @@ import PortfolioOfProjects from "./PortfolioOfProjects";
 import About from "./About";
 import Contact from "./Contact";
 import Admin from "./Admin";
+import { v4 } from "uuid";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      projectList: {}
+    };
+
+    this.handleAddingNewProject = this.handleAddingNewProject.bind(this);
+  }
+
+  handleAddingNewProject(newProject) {
+    var newProjectId = v4();
+    var newProjectList = Object.assign({}, this.state.projectList, {
+      [newProjectId]: newProject
+    });
+    this.setState({ projectList: newProjectList });
   }
 
   render() {
@@ -31,11 +45,19 @@ class App extends React.Component {
           <Route
             exact
             path="/portfolio"
-            render={() => <PortfolioOfProjects />}
+            render={() => (
+              <PortfolioOfProjects projectList={this.state.projectList} />
+            )}
           />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/admin" component={Admin} />
+          <Route
+            exact
+            path="/admin"
+            render={() => (
+              <Admin onAddingNewProject={this.handleAddingNewProject} />
+            )}
+          />
           <Route component={Error404} />
         </Switch>
       </div>
