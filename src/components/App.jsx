@@ -15,13 +15,12 @@ class App extends React.Component {
     this.state = {
       projectList: {}
     };
-
     this.handleAddingNewProject = this.handleAddingNewProject.bind(this);
   }
 
   handleAddingNewProject(newProject) {
-    var newProjectId = v4();
-    var newProjectList = Object.assign({}, this.state.projectList, {
+    let newProjectId = v4();
+    let newProjectList = Object.assign({}, this.state.projectList, {
       [newProjectId]: newProject
     });
     this.setState({ projectList: newProjectList });

@@ -9,8 +9,10 @@ class Admin extends React.Component {
     this._shortDescription = null;
     this._languages = null;
     this._link = null;
+    this.handleAddingNewProject = this.handleAddingNewProject.bind(this);
   }
 
+  //why is 'this' reading as null? Line 17. Can't retrieve this.props
   handleAddingNewProject(event) {
     event.preventDefault();
     this.props.onAddingNewProject({
